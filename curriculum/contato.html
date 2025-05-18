@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initialscale=1.0">
-		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" type="text/css" href="estilo_formulario.css">
 		<title>Contato</title>
 	</head>
 	<body>
@@ -35,8 +35,14 @@
             <label for="mensagem">Mensagem</label>
             <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
         </div>
-        <input type="submit" name="acao" value="Enviar">
+        <input type="submit" name="acao" value="Enviar" onclick="msg()">
     </form>
-</center>
+
+	<script>
+	function msg() {
+  	alert("Obrigado por entrar em contato!");	
+	}
+	</script>
+	</center>
 	</body>
 </html>
