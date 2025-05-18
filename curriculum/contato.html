@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initialscale=1.0">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
 		<title>Contato</title>
 	</head>
 	<body>
@@ -15,5 +16,27 @@
 			<hr>
 			<h1>Contato</h1>
 		</center>
+		<center>
+    <form class="formulario" method="post"> 
+        <p>Caso queira entrar em contato para troca de informações a respeito dos mais variados assuntos, estou disponível no email <a href="mailto:michel@marconssin.com">michel@marconssin.com</a> ou utilize o formulário abaixo. </p>
+        <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+        </div>
+        <div class="field">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+        </div>
+        <div class="field">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+        </div>        
+        <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+        </div>
+        <input type="submit" name="acao" value="Enviar">
+    </form>
+</center>
 	</body>
 </html>
