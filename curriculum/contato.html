@@ -3,20 +3,25 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initialscale=1.0">
-		<link rel="stylesheet" type="text/css" href="estilo_formulario.css">
+		<link rel="stylesheet" href="css/style.css">
 		<title>Contato</title>
 	</head>
 	<body>
-		<center>
-			<a href="index.html">Início</a>
-			<a href="apresentacao.html">Apresentação</a>
+  <div id="header">
+
+        <div id="logo">
+            <h1>Michel <span class="white">Marconssin</span> dos Santos</h1>
+        </div>
+    
+        <div id="menu">
+			<a href="index.html">Apresentação</a>
 			<a href="formacao.html">Formação Acadêmica</a>
 			<a href="experiencia.html">Experiências Profissionais</a>
 			<a href="contato.html">Contato</a>
-			<hr>
-			<h1>Contato</h1>
-		</center>
-		<center>
+        </div>
+    </div>
+
+	<center>
     <form class="formulario" method="post"> 
         <p>Caso queira entrar em contato para troca de informações a respeito dos mais variados assuntos, estou disponível no email <a href="mailto:michel@marconssin.com">michel@marconssin.com</a> ou utilize o formulário abaixo. </p>
         <div class="field">
@@ -38,11 +43,10 @@
         <input type="submit" name="acao" value="Enviar" onclick="msg()">
     </form>
 
-	<script>
-	function msg() {
-  	alert("Obrigado por entrar em contato!");	
-	}
-	</script>
+
 	</center>
-	</body>
+	<div id="footer">
+		Todos os direitos reservados - Michel Marconssin dos Santos
+    </div>
+</body>
 </html>
